@@ -1,26 +1,35 @@
-// import { HomePage } from "./components/Home"
+import CardSection from "./components/Card";
+import { Features } from "./components/Features";
+import { Navbar } from "./components/Navbar";
+import { RevenueSharing } from "./components/Revenue";
+import Tokenomics from "./components/Tokenomics";
+import { UseCases } from "./components/UseCases";
+import WhyUs from "./components/WhyUsSection";
 
-import { Navbar } from "./components/Navbar"
+import { HeroSection } from "./components/HeroSection";
+
+import Roadmap from "./components/RoadMap";
+import { Footer } from "./components/Footer";
+import FAQ from "./components/FaqSection";
 
 function App() {
-
   return (
     <>
-    <Navbar/>
-    {/* <div className="text-center">
-      <header className="bg-blue-500 p-6">
-        <h1 className="text-4xl text-white">Welcome to My React App with Tailwind CSS</h1>
-      </header>
-      <main className="p-4">
-        <p className="text-pink-700">
-          Tailwind CSS is now working in your React app!
-        </p>
-      </main>
-    </div>
-    <HomePage/> */}
-
+      <div className="main-container">
+        <Navbar />
+        <HeroSection/>
+        <Features />
+        <WhyUs/>
+        <RevenueSharing />
+        <Roadmap/>
+        <Tokenomics/>
+        <FAQ/>
+         <UseCases/>
+        <CardSection/>
+         <Footer/>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
